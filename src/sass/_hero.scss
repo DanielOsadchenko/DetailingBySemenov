@@ -1,0 +1,86 @@
+header {
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.header-contact__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-contact__item {
+  & + & {margin-left: 24px;}
+}
+
+.header-contact__link {
+  color: $accent;
+}
+
+.header-contact__svg {
+  width: 24px;
+  height: 24px;
+  fill: $accent;
+}
+
+
+
+.navigation {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item {}
+
+.navigation__link {
+  color: $white;
+}
+
+.mobile-type-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.open-menu-button {
+
+}
+
+.contact__link {
+  color: $accent;
+}
+
+.hero {}
+
+.hero__bmw-image {}
+
+.hero__title {
+  font-weight: 700;
+}
+
+.hero__title-accent {
+  font-family: $paci;
+}
+
+.hero__second-title {}
+
+.hero__button-link {
+  color: $accent;
+}
+
+.hero__button-link-svg {}
+
+.hero__button-link-icon {}
+
+.service__list {}
+
+.service__item {}
+
+.service__link {
+  color: $accent;
+}
