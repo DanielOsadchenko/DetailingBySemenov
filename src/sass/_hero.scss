@@ -37,8 +37,6 @@ header {
   display: flex;
 }
 
-.navigation__item {}
-
 .navigation__link {
   color: $white;
 }
@@ -46,31 +44,72 @@ header {
 .mobile-type-menu{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .open-menu-button {
+  border: none;
+  background-color: transparent;
+  color: $white;
 
+  font-weight: 700;
 }
 
 .contact__link {
-  color: $accent;
+  color: $white;
+  font-weight: 700;
 }
 
-.hero {}
+.hero {
+  border-top: 3px solid $accent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
-.hero__bmw-image {}
+.hero__bmw-image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
 
 .hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 42px;
   font-weight: 700;
+  text-align: center;
+  max-width: 360px;
+  letter-spacing: 0.2em;
+  // text-shadow: 0 0 10px $accent;
 }
 
 .hero__title-accent {
   font-family: $paci;
+  font-size: 42px;
+  letter-spacing: 0.11em;
 }
 
-.hero__second-title {}
+.hero__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  background-color: $accent;
+  border-radius: 15px;
+  color: $white;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  box-shadow: 0 0 10px $accent;
+}
 
 .hero__button-link {
-  color: $accent;
 }
 
 .hero__button-link-svg {}
