@@ -3,32 +3,9 @@ $paci: 'Pacifico',cursive;
 $black: #0D0E0E;
 $white: #f2f3f4;
 $accent: #92000a;
-// #f31300
 
-@mixin mobile-s {
-  @media screen and (min-width: 320px) {
-    @content;
-  }
-}
 
-@mixin mobile {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1280px) {
-    @content;
-  }
-}
-
+@import './mixins';
 
 html {
   box-sizing: border-box;
@@ -36,6 +13,11 @@ html {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 *,

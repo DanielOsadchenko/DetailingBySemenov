@@ -1,5 +1,3 @@
-header {
-}
 
 .header {
   margin-top: 20px;
@@ -15,14 +13,44 @@ header {
   & + & {margin-left: 24px;}
 }
 
-.header-contact__link {
-  color: $accent;
-}
-
 .header-contact__svg {
   width: 24px;
   height: 24px;
   fill: $accent;
+}
+
+.close-mobile-menu {
+  margin-bottom: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: $white;
+  width: 40px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    border-radius: 50px;
+    background-color: $accent;
+  }
+}
+
+
+.close__svg {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+}
+
+.navigation.is-open {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -31,13 +59,15 @@ header {
   position: absolute;
   visibility: hidden;
   opacity: 0;
+  padding: 30px 30px;;
 }
 
 .navigation__list {
-  display: flex;
+  margin-bottom: 50px;
 }
 
 .navigation__link {
+  font-size: 45px;
   color: $white;
 }
 
@@ -50,13 +80,43 @@ header {
   border: none;
   background-color: transparent;
   color: $white;
-
+  font-size: 24px;
   font-weight: 700;
+  margin-left: 10px;
+  width: 80px;
+
+  &:hover, &:focus {
+    border-radius: 15px;
+    background-color: $accent;
+  }
+}
+
+.address-mobile-menu {
+  display: block;
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &:hover,
+    &:focus {
+      border-radius: 15px;
+      background-color: $accent;
+    }
 }
 
 .contact__link {
   color: $white;
   font-weight: 700;
+  font-size: 24px;
+  margin-right: 10px;
+  padding: 3.6px 10px;
+  
+  &:hover, &:focus {
+    border-radius: 15px;
+    background-color: $accent;
+  }
+  
 }
 
 .hero {
@@ -115,11 +175,3 @@ header {
 .hero__button-link-svg {}
 
 .hero__button-link-icon {}
-
-.service__list {}
-
-.service__item {}
-
-.service__link {
-  color: $accent;
-}
