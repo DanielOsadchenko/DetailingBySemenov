@@ -67,6 +67,12 @@
   margin-bottom: 50px;
 }
 
+.navigation__item {
+  & + & {
+    margin-top: 10px;
+  }
+}
+
 .navigation__link {
   font-size: 45px;
   color: $white;
