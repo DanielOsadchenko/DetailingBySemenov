@@ -1,3 +1,6 @@
+.header-container {
+  height: 100vh;
+}
 
 .header {
   margin-top: 20px;
@@ -17,6 +20,10 @@
   width: 24px;
   height: 24px;
   fill: $accent;
+
+  &:hover, &:focus {
+    transform: scale(1.2);
+  }
 }
 
 .close-mobile-menu {
@@ -42,6 +49,7 @@
   width: 20px;
   height: 20px;
   fill: $white;
+  
 }
 
 .navigation.is-open {
@@ -76,6 +84,11 @@
 .navigation__link {
   font-size: 45px;
   color: $white;
+  padding: 6px 10px;
+  &:hover, &:focus {
+    border-radius: 15px;
+    background-color: $accent;
+  }
 }
 
 .mobile-type-menu{
@@ -139,6 +152,10 @@
   width: 100%;
   max-width: 450px;
   height: auto;
+  transition: 250ms linear;
+  &:hover, &:focus {
+    transform: scale(1.1);
+  }
 }
 
 .hero__title {
@@ -174,11 +191,40 @@
   padding-top: 4px;
   padding-bottom: 4px;
   box-shadow: 0 0 10px $accent;
+  transition: 250ms linear;
+
+  &hover, &:focus {
+    background-color: $white;
+    color: $accent;
+  }
 }
 
 .hero__button-link {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 50;
+  height: 50;
+  border-radius: 50px;
+  border: 4px solid $white;
+
+  &:hover, &:focus {
+    border-color: $accent;
+  }
 }
 
-.hero__button-link-svg {}
+.hero__button-link-svg {
+  margin-top: 3px;
+  width: 35px;
+  height: 35px;
+  fill: $white;
+
+  &:hover,
+    &:focus {
+      fill: $accent;
+    }
+}
 
 .hero__button-link-icon {}
